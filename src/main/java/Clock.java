@@ -6,3 +6,28 @@ public abstract class Clock{
     private int localTime = 0;
     public  abstract  void  setLocalTime (int localTime);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
