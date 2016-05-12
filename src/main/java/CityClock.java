@@ -4,8 +4,8 @@
 public class CityClock extends Clock {
     private UtcTime utcTime;
 
-    public CityClock(int i) {
-        super();
+    public CityClock(int utcOffset) {
+        super(utcOffset);
     }
 
 
