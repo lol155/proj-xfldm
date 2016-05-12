@@ -16,4 +16,10 @@ public class UtcTime extends TimeSubject {
         this.utcZeroTime = utcZeroTime;
         notifyAllClocks();
     }
+
+    public void printTimeOfAllClocks() {
+        for(String clockName : super.clocks.keySet()){
+            System.out.println(clockName + ":" + super.clocks.get(clockName).getTime());
+        }
+    }
 }

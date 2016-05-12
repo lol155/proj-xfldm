@@ -1,3 +1,5 @@
+import java.util.concurrent.Callable;
+
 /**
  * Created by admin on 2016/5/8.
  */
@@ -13,6 +15,10 @@ public abstract class Clock{
 
     public static int toLocalTime(int utcZeroTime) {
         return utcZeroTime + UTC_OFFSET;
+    }
+
+    public String getTime() {
+        return String.valueOf(this.localTime);
     }
 }
 
