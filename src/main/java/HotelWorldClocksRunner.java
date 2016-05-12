@@ -2,7 +2,7 @@
  * Created by admin on 2016/5/12.
  */
 public class HotelWorldClocksRunner {
-    public void main(String[] args){
+    public static void main(String[] args) {
         UtcTime utcTime = new UtcTime();
         utcTime.attach("beijing",new CityClock(8));
         utcTime.attach("london",new CityClock(0));
