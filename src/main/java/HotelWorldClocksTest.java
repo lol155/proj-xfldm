@@ -1,3 +1,4 @@
+import CityClock.CityClock;
 import org.junit.Test;
 
 public class HotelWorldClocksTest{
