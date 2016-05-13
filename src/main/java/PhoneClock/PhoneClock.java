@@ -12,4 +12,9 @@ public class PhoneClock {
 
     public void setCityClock(CityClock londonClock) {
     }
+
+
+    public void setTime(int time) {
+
+    }
 }
