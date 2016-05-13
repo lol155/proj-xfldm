@@ -9,6 +9,9 @@ public class HotelWorldClocksTest{
         phoneClock.setCityClock(londonClock);
         phoneClock.setTime(9);
         //Assert
+        cityClock londonClock = new CityClock(0);
+        PhoneClock phoneClock = new PhoneClock(8);
+
         assertEquals(1, londonClock.getTime());
     }
 }
