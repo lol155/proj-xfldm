@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="proj" />
+        <module name="proj-xfldm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="proj" target="1.5" />
+      <module name="proj-xfldm" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
