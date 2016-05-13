@@ -10,7 +10,6 @@ public class PhoneClock {
 
     }
 
-    public void setCityClock(CityClock.CityClock cityClock) {
-
+    public void setCityClock(CityClock londonClock) {
     }
 }
