@@ -5,4 +5,7 @@ package CityClock;
  */
 public class CityClock {
 
+    public CityClock(int utcOffset) {
+        
+    }
 }
