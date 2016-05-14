@@ -5,6 +5,12 @@ public class PhoneClock {
     private CityClock cityClock;
     private int utcOffset;
 
+    public void setHotelWorldClockSystem(HotelWorldClockSystem hotelWorldClockSystem) {
+        this.hotelWorldClockSystem = hotelWorldClockSystem;
+    }
+
+    private HotelWorldClockSystem hotelWorldClockSystem;
+
     public PhoneClock(int utcOffset) {
         this.utcOffset = utcOffset;
     }
