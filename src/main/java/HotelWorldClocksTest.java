@@ -15,4 +15,17 @@ public class HotelWorldClocksTest{
         //Assert
         assertEquals(1, londonClock.getTime());
     }
+
+    @Test
+    public void the_time_of_clock_NewYork_should_be_1_after_the_phone_clock_is_set_to_9_Beijing_time(){
+        //Arrange
+        CityClock newYorkCity = new CityClock(-5);
+        PhoneClock phoneClock = new PhoneClock(8);
+        //Act
+        phoneClock.setCityClock(newYorkCity);
+        phoneClock.setTime(9);
+
+        //Assert
+        assertEquals(20, newYorkCity.getTime());
+    }
 }
