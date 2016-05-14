@@ -3,6 +3,8 @@
  */
 public class CityClock {
 
+    private int utcOffset;
+
     public CityClock(int utcOffset) {
         
     }
