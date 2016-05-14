@@ -3,4 +3,6 @@
  */
 public class HotelWorldClockSysTem {
 
+    public void attach(CityClock londonClock) {
+    }
 }
