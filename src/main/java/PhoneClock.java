@@ -1,9 +1,8 @@
 /**
  * Created by admin on 2016/5/13.
  */
-public class PhoneClock {
+public class PhoneClock extends Clock{
     private CityClock cityClock;
-    private int utcOffset;
 
     private HotelWorldClockSystem hotelWorldClockSystem;
 
@@ -12,7 +11,7 @@ public class PhoneClock {
     }
 
     public PhoneClock(int utcOffset) {
-        this.utcOffset = utcOffset;
+        super.utcOffset = utcOffset;
     }
 
     public void setCityClock(CityClock cityClock) {
@@ -23,7 +22,7 @@ public class PhoneClock {
     public void setTime(int time) {
         for (CityClock cityClock :
                 this.hotelWorldClockSystem.getClocks()) {
-            cityClock.setUtcZeroTime(time - this.utcOffset);
+            cityClock.setUtcZeroTime(time - super.utcOffset);
         }
     }
 
