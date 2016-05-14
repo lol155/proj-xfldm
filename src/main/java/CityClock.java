@@ -4,6 +4,7 @@
 public class CityClock {
 
     private int utcOffset;
+    private int utcZeroYimr;
 
     public CityClock(int utcOffset) {
         this.utcOffset = utcOffset;
