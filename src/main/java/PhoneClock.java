@@ -18,4 +18,7 @@ public class PhoneClock {
         this.cityClock.setUtcZeroTime(time - this.utcOffset);
     }
 
+    public void setHotelWorldClockSystem(HotelWorldClockSysTem hotelWorldClockSystem) {
+        this.hotelWorldClockSystem = hotelWorldClockSystem;
+    }
 }
