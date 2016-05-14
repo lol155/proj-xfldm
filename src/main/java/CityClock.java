@@ -8,6 +8,6 @@ public class CityClock {
     }
 
     public int getTime() {
-        return 1;
+        return this.utcOffset + this.utcZeroYimr;
     }
 }
