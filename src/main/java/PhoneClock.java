@@ -2,7 +2,6 @@
  * Created by admin on 2016/5/13.
  */
 public class PhoneClock extends Clock{
-    private CityClock cityClock;
 
     private HotelWorldClockSystem hotelWorldClockSystem;
 
@@ -13,11 +12,6 @@ public class PhoneClock extends Clock{
     public PhoneClock(int utcOffset) {
         super.utcOffset = utcOffset;
     }
-
-    public void setCityClock(CityClock cityClock) {
-        this.cityClock = cityClock;
-    }
-
 
     public void setTime(int time) {
         for (CityClock cityClock :
