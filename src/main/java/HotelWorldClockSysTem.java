@@ -1,8 +1,17 @@
+import java.util.ArrayList;
+
 /**
  * Created by admin on 2016/5/14.
  */
-public class HotelWorldClockSysTem {
+public class HotelWorldClockSystem {
 
-    public void attach(CityClock londonClock) {
+    private ArrayList<CityClock> cityClocks = new ArrayList<CityClock>();
+
+    public void attach(CityClock cityClock) {
+        this.cityClocks.add(cityClock);
+    }
+
+    public ArrayList<CityClock> getClocks() {
+        return this.cityClocks;
     }
 }

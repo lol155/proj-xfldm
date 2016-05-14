@@ -1,7 +1,9 @@
+import java.time.Clock;
+
 /**
  * Created by admin on 2016/5/13.
  */
-public class CityClock {
+public class CityClock extends Clock{
 
     private int utcOffset;
     private int utcZeroTime;

@@ -23,7 +23,7 @@ public class PhoneClock {
     public void setTime(int time) {
         for (CityClock cityClock :
                 this.hotelWorldClockSystem.getClocks()) {
-            this.cityClock.setUtcZeroTime(time - this.utcOffset);
+            cityClock.setUtcZeroTime(time - this.utcOffset);
         }
     }
 
