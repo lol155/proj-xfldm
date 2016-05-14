@@ -15,10 +15,12 @@ public class PhoneClock {
 
 
     public void setTime(int time) {
-        this.cityClock.setUtcZeroTime(time - this.utcOffset);
+        for (CityClock cityClock :
+                this.hotelWorldClockSystem.getClocks()) {
+            this.cityClock.setUtcZeroTime(time - this.utcOffset);
+        }
     }
 
     public void setHotelWorldClockSystem(HotelWorldClockSysTem hotelWorldClockSystem) {
-        this.hotelWorldClockSystem = hotelWorldClockSystem;
     }
 }
