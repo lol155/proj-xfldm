@@ -4,13 +4,17 @@
 public class CityClock {
 
     private int utcOffset;
-    private int utcZeroYimr;
+    private int utcZeroTime;
 
     public CityClock(int utcOffset) {
         this.utcOffset = utcOffset;
     }
 
     public int getTime() {
-        return this.utcOffset + this.utcZeroYimr;
+        return this.utcOffset + this.utcZeroTime;
+    }
+
+    public void setUtcZeroTime(int utcZeroTime) {
+        this.utcZeroTime = utcZeroTime;
     }
 }
