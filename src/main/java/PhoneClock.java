@@ -22,7 +22,7 @@ public class PhoneClock extends Clock{
             cityClock.setUtcZeroTime(time - super.utcOffset);
         }
     }
-
+    @Override
     public int getTime() {
         return this.time;
     }
