@@ -14,10 +14,14 @@ public class PhoneClock extends Clock{
     }
 
     public void setTime(int time) {
+        if(this.hotelWorldClockSystem == null ) return;
         for (CityClock cityClock :
                 this.hotelWorldClockSystem.getClocks()) {
             cityClock.setUtcZeroTime(time - super.utcOffset);
         }
     }
 
+    public int getTime() {
+        return this.time;
+    }
 }
